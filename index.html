@@ -3,58 +3,58 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <link rel="icon" type="imagem/png" href="icon/map-black-24dp.svg"/>
   <title>View Cities</title>
-
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <nav class="green darken-4" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">View Cities</a>
+    <div class="nav-wrapper container"><a id="logo-container" class="brand-logo">View Cities</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="https://www.ibge.gov.br/geociencias/organizacao-do-territorio/15774-malhas.html?=&t=downloads">Based on</a></li>
       </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="https://www.ibge.gov.br/geociencias/organizacao-do-territorio/15774-malhas.html?=&t=downloads">Based on</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   <br><br>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container"> 
         <div class="row card-panel">
-            <div class="col s12">
+          <div class="row">
+            <form class="col s12">
               <div class="row">
-                <h6 class="light-green-text text-darken-2"></h3>
-                <div class="input-field col s12">
-                  <i class="material-icons prefix">map</i>
-                  <input type="text" id="autocomplete-input" class="autocomplete" name="autocomplete-input">
-                  <label for="autocomplete-input">Enter the name of a city to display its map:</label>
+                <div id="input" class="input-field col s6">
+                  <i id="iconbtn" class="material-icons prefix">map</i>
+                  <input id="icon_prefix" type="text" class="validate">
+                  <label for="icon_prefix">Enter the name of a city to display its map:</label>
                 </div>
+                <div id="button" class="switch">
+                  <a class="waves-effect green darken-4 btn"><i class="material-icons left">search</i>Search</a>
+                </div> 
               </div>
-
-              <h4 class="light-green-text text-darken-2">The map will be shown here</h3>
-
-            </div>
+            </form>
           </div>
-
-          <br><br><br><br><br><br><br><br>
-
+        </div>
     </div>
+    <br>
+    <div id="map" class="container">
+      <div class="row card-panel">
+        <h4 class="green-darken-text text-darken-2">The map will be shown here</h3>
+      </div>
+    </div>
+    <br><br><br><br>
   </div>
-
   <footer class="page-footer light-green darken-2">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
+        <div id="down1" class="col l6 s12">
           <h5 class="white-text">Description</h5>
           <p class="grey-text text-lighten-4">You must create a page, which receives the name of a municipality and manages the SVG of that municipality. If you want a bigger challenge, feel free to create, as long as the result is a web page that presents SVG geometries from a PostGIS bank. To make your life easier, this activity can be developed in pairs.</p>
         </div>
-        <div class="col l3 s12">
+        <div id="down2" class="col l3 s12">
           <h5 class="white-text">Repositories</h5>
           <ul>
             <li><a class="white-text" href="https://github.com/AndroidOnTheFly/project_ibge">This Project</a></li>
@@ -66,12 +66,9 @@
       </div>
     </div>
   </footer>
-
   <!--  Scripts-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
   <script type="text/javascript" src="js/init.js"></script>
-  <script type="text/javascript" src="js/autocomplete.js"></script>
-  
   </body>
 </html>

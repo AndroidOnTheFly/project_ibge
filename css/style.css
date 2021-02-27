@@ -12,3 +12,62 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+#input{
+  width: 85%;
+  float: left;
+}
+
+#button{
+  width: 14%;
+  float: right;
+  margin-top:15px; 
+}
+
+#map {
+  text-align: center
+}
+
+/**Form/
+
+  /* label color */
+  .input-field label {
+    color: #1b5e20;
+  }
+
+  /* label focus color */
+  .input-field input:focus + label {
+    color:#8bc34a !important;
+  }
+  /* label underline focus color */
+  .row .input-field input:focus {
+    border-bottom: 1px solid #8bc34a !important;
+    box-shadow: 0 1px 0 0 #8bc34a !important
+  }
+
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #1b5e20;
+    box-shadow: 0 1px 0 0 #1b5e20;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #ff9800;
+    box-shadow: 0 1px 0 0 #ff9800;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #8bc34a;
+  }
+
+  html{
+    color: #1b5e20;
+  }
+
+  #down1{
+    float: left;
+  }
+
+  #down2{
+    float: right;
+  }
