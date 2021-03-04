@@ -32,7 +32,7 @@
                   <label for="icon_prefix">Enter the name of a city to display its map:</label>
                 </div>
                 <div id="button" class="switch">
-                  <a class="waves-effect green darken-4 btn"><i class="material-icons left">search</i>Search</a>
+                  <a id="button-search" class="waves-effect green darken-4 btn"><i class="material-icons left">search</i>Search</a>
                 </div> 
               </div>
             </form>
@@ -40,12 +40,14 @@
         </div>
     </div>
     <br>
-    <div id="map" class="container">
+    <div class="container">
       <div class="row card-panel">
-        <h4 class="green-darken-text text-darken-2">The map will be shown here</h3>
+        <h1 id="text" class="green-darken-text text-darken-2">The map will be shown here</h1>
+        <svg id="viewbox">
+          <path id="path"/>
+        </svg>
       </div>
     </div>
-    <br><br><br><br>
   </div>
   <footer class="page-footer light-green darken-2">
     <div class="container">
@@ -68,7 +70,9 @@
   </footer>
   <!--  Scripts-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
   <script type="text/javascript" src="js/materialize.js"></script>
   <script type="text/javascript" src="js/init.js"></script>
+  <script type="text/javascript" src="js/function.js"></script>
   </body>
 </html>
